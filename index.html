@@ -161,7 +161,7 @@
 
     <audio id="bg-music" src="song.mp3" loop autoplay></audio>
 
-    <h1 id="status-text">เธอช่วยรดน้ำให้ต้นไม้ต้นนี้หน่อยนะ🌱</h1>
+    <h1 id="status-text">หนูช่วยรดน้ำให้ต้นไม้ต้นนี้หน่อยนะคะ🌱</h1>
 
     <div id="plant-container">
         <img id="main-plant-img" src="stage1.png">
@@ -215,16 +215,16 @@
         let isBouquetStage = false;
         
         const captions = [
-            "ส่งเธอกลับบ้าน\nคิดถึงมากก", 
-            "วันวาเลนไทน์\nเธอให้ดอกไม้เค้า\nน่ารักที่สุด", 
-            "วันเกิดเธอปีก่อน\เธอชอบเค้กขนมปัง", 
-            "อ้วนๆ", 
-            "เราทำต้นคริสต์มาสด้วยกัน", 
-            "เธอชอบถ่ายรูปท่าแปลกๆ", 
-            "ทำบัวลอยด้วยกัน\nอร่อยมาก", 
-            "ของขวัญวันเกิดเค้า\nเธอซื้อให้\nน่ารักที่สุดด", 
-            "เที่ยวด้วยกัน", 
-            "วันเกิดเธอปีก่อนนู้นน"
+            "", 
+            "", 
+            "", 
+            "", 
+            "", 
+            "", 
+            "", 
+            "", 
+            "", 
+            ""
         ];
 
         const statusText = document.getElementById('status-text');
@@ -241,13 +241,13 @@
             count++;
             
             if (count <= 20) {
-                statusText.innerText = `เย้! ได้น้ำจากเธอแล้วเริ่มโตเลย (${count}%)`;
+                statusText.innerText = `เย้! ได้น้ำจากหนูแล้วเริ่มโตเลย (${count}%)`;
             } else if (count <= 40) {
-                statusText.innerText = `ขอบคุณที่ตั้งใจเลี้ยงดูแลอย่างดีนะ (${count}%)`;
+                statusText.innerText = `ขอบคุณหนูที่ตั้งใจเลี้ยงดูแลอย่างดีนะคะ (${count}%)`;
             } else if (count <= 60) {
-                statusText.innerText = `ต้นไม้ของเรากำลังเติบโตด้วยความรักแล้วนะ (${count}%)`;
+                statusText.innerText = `ต้นไม้ของเรากำลังเติบโตด้วยความรักแล้วนะคะ (${count}%)`;
             } else if (count <= 80) {
-                statusText.innerText = `อีกนิดเดียวต้นไม้ของเราจะสมบูรณ์แบบแล้วนะ (${count}%)`;
+                statusText.innerText = `อีกนิดเดียวต้นไม้ของเราจะสมบูรณ์แบบแล้วนะคะ (${count}%)`;
             } else {
                 statusText.innerText = `อีกนิดนะคะ ต้นไม้ของเราเติบโตเต็มที่แล้ว (${count}%)`;
             }
@@ -265,7 +265,7 @@
                 
                 setTimeout(() => { 
                     nongImg.classList.add('show'); 
-                    statusText.innerText = `มาเก็บเกี่ยวกัน...ลองกดดูสิ?`; 
+                    statusText.innerText = `มาเก็บเกี่ยวกันค่ะ...ลองกดดูสิคะ?`; 
                 }, 800);
             } else {
                 waterCan.style.display = "block";
@@ -292,7 +292,7 @@
                 
                 setTimeout(() => {
                     isBouquetStage = true;
-                    statusText.innerText = `ดอกไม้สำหรับเธอ💗\nลองกดที่ช่อดอกไม้สิ!`;
+                    statusText.innerText = `ดอกไม้สำหรับหนู💗\nลองกดที่ช่อดอกไม้สิคะ!`;
                     
                     plantImg.style.cursor = 'pointer';
                     plantImg.onclick = () => {
